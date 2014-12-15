@@ -1495,6 +1495,14 @@ pub enum InferTy {
     FreshIntTy(uint),
 }
 
+#[deriving(Clone, RustcEncodable, RustcDecodable, PartialEq, Eq, Hash, Show, Copy)]
+pub enum UnconstrainedNumeric {
+    UnconstrainedFloat,
+    UnconstrainedInt,
+    Neither,
+}
+
+
 #[deriving(Clone, RustcEncodable, RustcDecodable, Eq, Hash, Show, Copy)]
 pub enum InferRegion {
     ReVar(RegionVid),
