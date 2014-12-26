@@ -30,6 +30,7 @@ where T : Convert<U>
 }
 
 fn main() {
+    use std::default::Default;
     // T = i16, U = u32
-    test(22, 44,  2, 4);
+    test(Default::default(), Default::default(),  2, 4);
 }

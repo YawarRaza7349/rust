@@ -12,6 +12,5 @@
 
 fn main() {
     let mut array = [1, 2, 3];
-//~^ ERROR cannot determine a type for this local variable: cannot determine the type of this integ
     let pie_slice = array[1..2];
 }
